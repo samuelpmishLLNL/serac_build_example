@@ -3,7 +3,7 @@ a dummy project showing how to use cmake to build/consume mixed C++/CUDA librari
 
 # building and running (with and without CUDA enabled)
 
-```
+```bash
 serac_build_example$ mkdir build && cd build                                     
 serac_build_example/build$ cmake ..                                                 
 -- The CXX compiler identification is GNU 9.3.0                                     
