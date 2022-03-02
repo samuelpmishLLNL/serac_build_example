@@ -1,13 +1,13 @@
 #include "core.hpp"
-#include "core.cuh"
 
 #include <iostream>
 
 __global__ void some_kernel(double * ptr) {
-  transform(ptr[threadIdx.x]);
+  axom::transform(ptr[threadIdx.x]);
 }
 
 namespace axom{
+  
   void foo_device() {
   
     std::cout << "running calculation on device" << std::endl;

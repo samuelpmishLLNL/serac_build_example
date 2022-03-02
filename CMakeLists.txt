@@ -13,5 +13,5 @@ if(ENABLE_CUDA)
   enable_language(CUDA)
   add_executable(serac_cuda main.cu)
   target_link_libraries(serac_cuda PUBLIC axom)
+  set_target_properties(serac_cuda PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 endif()
-

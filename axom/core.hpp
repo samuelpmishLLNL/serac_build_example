@@ -15,5 +15,3 @@ namespace axom {
   AXOM_HOST_DEVICE void transform(double &);
 #endif
 }
-
-
