@@ -7,11 +7,3 @@
 #define AXOM_HOST
 #define AXOM_DEVICE
 #endif
-
-namespace axom {
-  void foo_host();
-#if defined(__CUDACC__)
-  void foo_device();
-  AXOM_HOST_DEVICE void transform(double &);
-#endif
-}
